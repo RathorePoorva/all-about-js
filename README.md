@@ -66,7 +66,7 @@ x. for...of Loop
        message = typeof message !== 'undefined' ? message : 'Hello Instagram';
        console.log(message);
     }
-    printMessage(); // 'Hello Instagram'`
+    printMessage(); // 'Hello Instagram'
 ```   
 - ES6 provides an easy way to set default parameters:
 - using default values
@@ -125,4 +125,14 @@ x. for...of Loop
     subtract(); //reference Error
     subtract(10,5); //5
 ```
+5. ###String Interpolation
+- ES6 introduced String Interpolation in javascript which means now we can add variables, function calls, arithmetic expressions directly into a string using template literals (string starting and ending with backticks ` `) and ${expresssion} as placeholders.
+- It make your code more readable and less clumpsy
 
+    eg: 
+    ```js 
+        function printMessage(message, name){
+           console.log(`${message}, my name is ${name}.`);
+        }
+        printMessage("Hello","Poorva"); 
+    ```
