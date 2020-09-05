@@ -49,3 +49,77 @@ The wide array features of ES6 make this a very beneficial and efficient scripti
 8. Promises
 9. String interpolation
 10. for...of Loop
+
+4. ### Default Function Parameters
+- Default function parameters allow named parameters to be initialized with default values if no value or undefined is passed.
+- **argument -vs- parameter:** though we use it interchangeably but arguments are what we pass to the function and parameter are what values are being received by the function.
+- In Javascript, if no values are passed to the parameter, it is set to undefined by default.
+
+    function printMessage(message) {
+        console.log(message);
+    }
+    printMessage(); // undefined
+
+- Typical way to assign a default value is to depend on logical OR operators to handle default values of function parameters:
+
+    `function printMessage(message) {
+       message = typeof message !== 'undefined' ? message : 'Hello Instagram';
+       console.log(message);
+    }
+    printMessage(); // 'Hello Instagram'`
+    
+- ES6 provides an easy way to set default parameters:
+- using default values
+
+    function printMessage(message='Hi Insta') {
+      console.log(message);
+    }
+    printMessage(); // 'Hi Insta'
+    printMessage(undefined); // 'Hi Insta'
+    printMessage('Hello Instagram'); // 'Hello Instagram'
+
+- using object
+
+    function printMessage({message="Hi",name="Poorva"}={}) {
+    console.log(`${message} ${name}`);}
+    printMessage(); // Hi Poorva
+    printMessage({message:'Hello',name:"Insta"});// Hello Insta
+
+- using functions
+
+    function getName (){
+    return "Poorva Rathore";
+    }
+    function printMessage(message="Hi", name=getName()){
+    console.log(message + " " +name);
+    }
+    printMessage(); [//Hello](//hello) Poorva Rathore
+    printMessage("Hello","Insta"); //Hello Insta
+
+- The default argument is evaluated at call time.
+- Parameters are still set left-to-right, overwriting default parameters even if there are later parameters without defaults
+- functions and variables declared in the function body cannot be referred to from default value parameter initializers; attempting to do so throws a run-time ReferenceError.
+
+    EG:
+
+    function printMessage(message="hello", name=getName()){
+    function getName(){
+    return "Poorva";
+    }
+    console.log(message+" "+name);
+    }
+    printMessage(); 
+
+- QUIZ TIME:
+
+    function add(x=1,y=x+1,z=x+y){
+    console.log(x+y+z);
+    }
+    add(); //6
+    add(1,2,3); //6
+
+    function subtract(x=y+1,y=1){
+    console.log(x-y);
+    }
+    subtract(); //reference Error
+    subtract(10,5); //5
