@@ -8,8 +8,13 @@ This repository will cover most of the topics of javascript, interview question 
 | 3 | [ES6 Features](#es6-features)|
 | 4 | [Default Function Parameters](#default-function-parameters)|
 | 5 | [String Interpolation](#string-interpolation)|
-| 6 | [JS Introduction](#intro)|
-| 7 | [JS Introduction](#intro)|
+| 6 | [Var Let Const](#var-let-const)|
+| 7 | [Arrow Function](#arrow-function)|
+| 8 | [Helper Functions](#helper-functions)|
+| 9 | [Classes](#classes)|
+| 10 | [Rest & Spread Operator](#rest-spread-operator)|
+| 11 | [Destructuring of Array and Objects](#destructuring-of-array-and-objects)|
+
 
 1. ### JS Introduction
 - JS is single threaded and have a single call stack. Hence, synchronous
