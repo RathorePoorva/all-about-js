@@ -39,27 +39,27 @@ To increase the development of Javascript as independent implementation, ES6 was
 
 The wide array features of ES6 make this a very beneficial and efficient scripting language which is useful for everything related to JavaScript technology.
 
-1. Block scoping - introduction to let and const keywords
-2. arrow functions
-3. Helper functions like forEach, map, filter, reduce, find
-4. classes 
-5. default function Parameter
-6. rest and spread operator
-7. Destructuring of arrays and objects
-8. Promises
-9. String interpolation
-10. for...of Loop
+i. Block scoping - introduction to let and const keywords
+ii. arrow functions
+iii. Helper functions like forEach, map, filter, reduce, find
+iv. classes 
+v. default function Parameter
+vi. rest and spread operator
+vii. Destructuring of arrays and objects
+viii. Promises
+ix. String interpolation
+x. for...of Loop
 
 4. ### Default Function Parameters
 - Default function parameters allow named parameters to be initialized with default values if no value or undefined is passed.
-- **argument -vs- parameter:** though we use it interchangeably but arguments are what we pass to the function and parameter are what values are being received by the function.
+- argument -vs- parameter: though we use it interchangeably but arguments are what we pass to the function and parameter are what values are being received by the function.
 - In Javascript, if no values are passed to the parameter, it is set to undefined by default.
-
+```js
     function printMessage(message) {
         console.log(message);
     }
     printMessage(); // undefined
-
+```
 - Typical way to assign a default value is to depend on logical OR operators to handle default values of function parameters:
 
     `function printMessage(message) {
