@@ -125,8 +125,8 @@ x. for...of Loop
     subtract(); //reference Error
     subtract(10,5); //5
 ```
-5. ###String Interpolation
-- ES6 introduced String Interpolation in javascript which means now we can add variables, function calls, arithmetic expressions directly into a string using template literals (string starting and ending with backticks ` `) and ${expresssion} as placeholders.
+5. ### String Interpolation
+- ES6 introduced String Interpolation in javascript which means now we can add variables, function calls, arithmetic expressions directly into a string using template literals (string starting and ending with backticks \` \`) and ${expresssion} as placeholders.
 - It make your code more readable and less clumpsy
 
     eg: 
