@@ -139,5 +139,5 @@ x. for...of Loop
         function printMessage(message, name){
            console.log(`${message}, my name is ${name}.`);
         }
-        printMessage("Hello","Poorva"); 
+        printMessage("Hello","Poorva Rathore"); 
     ```
